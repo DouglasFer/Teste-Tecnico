@@ -1,0 +1,39 @@
+header {
+  height: 70px;
+  width: 100%;
+  background-color: var(--color-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header_pages h3 {
+  color: white;
+
+  width: 300px;
+}
+.header_pages {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+.content_button {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.content_button button {
+  width: auto;
+  border: var(--border-default);
+  border-radius: var(--radius-4);
+  background-color: white;
+
+  font-weight: var(--font-weight);
+  height: 30px;
+}
+.content_button button:hover {
+  background-color: var(--color-blue);
+  opacity: 1;
+  color: white;
+}
