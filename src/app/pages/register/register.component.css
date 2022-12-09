@@ -1,4 +1,4 @@
-form {
+.content_form {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -20,51 +20,4 @@ form {
   padding: 20px;
   border-radius: var(--radius-4);
   box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.63);
-}
-
-.container_form input {
-  height: 40px;
-  padding-left: 10px;
-  border: var(--border-default);
-  border-radius: var(--radius-4);
-  color: rgba(0, 0, 0, 0.3);
-  outline: none;
-}
-
-.container_form label {
-  font-size: 14px;
-  font-weight: var(--font-weight);
-  color: rgba(0, 0, 0, 0.7);
-}
-
-.container_form input:focus {
-  transform: scale(0.98);
-  box-shadow: 0px 0px 18px 0px var(--color-blue);
-}
-.container_form button {
-  background: none;
-  height: 40px;
-  border: var(--border-default);
-  border-radius: var(--radius-4);
-  font-size: 16px;
-  font-weight: var(--font-weight);
-  color: rgba(0, 0, 0, 0.7);
-}
-
-.container_form button:hover {
-  background-color: var(--color-blue);
-  border: 1px solid var(--color-blue);
-  color: white;
-}
-
-@keyframes animateEntrance {
-  0% {
-    opacity: 0;
-    transform: scale(0.6);
-  }
-
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
 }

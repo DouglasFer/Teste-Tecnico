@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Work+Sans&display=swap");
+
+.container_home_page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.content_home_page {
+  animation: animateEntrance 1s ease 0s 1 alternate forwards;
+  font-family: "Work Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content_home_page p {
+  font-size: 80px;
+  font-weight: 800;
+  color: var(--color-blue);
+}
+.content_home_page span {
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.7);
+}

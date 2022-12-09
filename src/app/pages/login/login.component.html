@@ -1,1 +1,26 @@
-<div class="container_login"></div>
+<form class="container_login" (ngSubmit)="onSubmit()">
+  <div class="content_login">
+    <label for="email_user" class="style_label">Email ou Usuário</label>
+    <input
+      class="style_inputs"
+      name="email_user"
+      type="text"
+      id="email_user"
+      placeholder="Digite seu email ou usuário"
+      [(ngModel)]="arrayUserRegistered.user"
+    />
+
+    <label for="password" class="style_label">Senha</label>
+    <input
+      class="style_inputs"
+      name="password"
+      type="password"
+      id="password"
+      placeholder="Digite sua senha"
+      [(ngModel)]="arrayUserRegistered.password"
+    />
+
+    <p class="forget_password">Esqueceu a senha?</p>
+    <button type="submit" class="style_buttons">Entrar</button>
+  </div>
+</form>

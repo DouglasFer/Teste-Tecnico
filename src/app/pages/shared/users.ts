@@ -5,3 +5,8 @@ export class Users {
   password: string = '';
   img: string = '';
 }
+
+export class Registered {
+  user: string = '';
+  password: string = '';
+}

@@ -1,43 +1,76 @@
-<form #f="ngForm" (ngSubmit)="onSubmit()">
+<form #f="ngForm" (ngSubmit)="onSubmit()" class="content_form">
   <div class="container_form">
-    <label for="name">Nome Completo</label>
+    <label for="name" class="style_label">Nome Completo</label>
     <input
+      class="style_inputs"
       type="text"
       id="name"
       name="name"
+      required
       placeholder="Digite seu nome aqui"
       [(ngModel)]="arrayUser.name"
     />
 
-    <label for="user">Nome de Usuário</label>
+    <div
+      *ngIf="formulario.get('name')?.errors?.['required'] && formulario.get('name')?.touched"
+    >
+      Nome obrigatório
+    </div>
+
+    <label for="user" class="style_label">Nome de Usuário</label>
     <input
+      class="style_inputs"
       type="text"
       id="user"
       name="user"
+      required
       placeholder="Digite seu usuário aqui"
       [(ngModel)]="arrayUser.user"
     />
 
-    <label for="email">Email</label>
+    <div
+      *ngIf="formulario.get('user')?.errors?.['required'] && formulario.get('user')?.touched"
+    >
+      Usuário obrigatório
+    </div>
+
+    <label for="email" class="style_label">Email</label>
     <input
+      class="style_inputs"
       type="email"
       id="email"
       name="email"
+      required
       placeholder="name@example.com"
       [(ngModel)]="arrayUser.email"
     />
 
-    <label for="password">Senha</label>
+    <div
+      *ngIf="formulario.get('email')?.errors?.['required'] && formulario.get('email')?.touched"
+    >
+      Email obrigatório
+    </div>
+
+    <label for="password" class="style_label">Senha</label>
     <input
+      class="style_inputs"
       type="password"
       id="password"
       name="password"
+      required
       placeholder="Digite sua senha"
       [(ngModel)]="arrayUser.password"
     />
 
-    <label for="img">Imagem</label>
+    <div
+      *ngIf="formulario.get('password')?.errors?.['required'] && formulario.get('password')?.touched"
+    >
+      Senha obrigatória
+    </div>
+
+    <label for="img" class="style_label">Imagem</label>
     <input
+      class="style_inputs"
       type="text"
       id="img"
       name="img"
@@ -45,6 +78,6 @@
       [(ngModel)]="arrayUser.img"
     />
 
-    <button type="submit">Salvar</button>
+    <button type="submit" class="style_buttons">Salvar</button>
   </div>
 </form>

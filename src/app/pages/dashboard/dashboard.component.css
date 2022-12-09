@@ -1,0 +1,28 @@
+.container_dashboard {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+}
+.content_dashboard {
+  animation: animateEntrance 1s ease 0s 1 alternate forwards;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content_dashboard p {
+  font-size: 80px;
+  font-weight: 800;
+  color: var(--color-blue);
+}
+.content_dashboard span {
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.8);
+}
